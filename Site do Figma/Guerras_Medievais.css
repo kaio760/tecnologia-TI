@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    width: 500px;
+    font-size: 25px;
+    display: block;
+    background-color: rgb(41, 25, 25);
+    width: auto;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin: 80px;
+    padding: 30px;
+    border-radius: 25px;
+
+}
+
+
+main {
+    background-color: rgb(3, 3, 51);
+    border-bottom: 20px;
+    margin: 80px;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+main.container{
+    background-color: white;
+}
+
+
+
+body {
+    line-height: 1.6;
+    background-color: #4d4242;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5e5d5d;
+    padding: 20px 50px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-medieval {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-medieval input {
+    border-radius: 10px;
+    padding: 9px;
+    /*borda do menu*/
+    outline: auto
+        /*Um contorno é uma linha desenhada fora da borda da "pesquisa"*/
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu li {
+    display: inline;
+    cursor: pointer;
+    transition: 20px;
+}
+
+h1{
+    color: rgb(78, 151, 247);
+}
+
+.flex-container-texto p{
+    color: whitesmoke;
+    margin-top: 10px;    /* Espaço acima */
+    margin-bottom: 15px; /* Espaço abaixo */
+}
+
+
+
+#itens {
+    display: style;
+    display: flex;
+    gap: 5vw;
+    /*separa os itens do menu*/
+    font-weight: bold;
+}
+
+
+#itens li:hover {
+    color: yellow;
+}
+
+.red {
+    background-color: red;
+    width: 6vw;
+    border-radius: 25px;
+}
+
+.imgmedieval {
+    border-radius: 25px;
+    width: auto;
+    max-height: 550px;
+}
+
+.imglogotipo{
+    width: 50px;
+    border-radius: ;
+}
+
+.imgmedieval:hover{
+    transform: scale3d(1.1); /*transformação de tamanho da imagem*/
+    box-shadow: 0px 4px 15px black; /*a cor que vai ficar no fundo da imagem*/
+}
+
+.imgtematica {
+    border-radius: 20px;
+}
+
+
+section {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: brown;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container-menu {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items:center;
+    width: 100%;
+    padding: 20px;
+    background-color: #5e5d5d;
+    border-radius: 10px;
+}
+
+.container-icon {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaço entre os ícones */
+    margin: 30px 0; /* Espaçamento em relação a outros elementos */
+}
+
+.imgicon {
+    width: 50px; /* Tamanho fixo para os ícones */
+    height: 50px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+.imgicon:hover {
+    transform: scale(1.2); /* Efeito de zoom ao passar o mouse */
+    opacity: 0.6;
+}
+
+/* Estilizando a barra de navegação */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    width: 100%;
+    max-width: 1200px; /* Mantém um limite para telas muito grandes */
+}
+
+/* Ajuste do container do título e barra de pesquisa */
+.menu-medieval {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-medieval input {
+    border-radius: 10px;
+    padding: 9px;
+    outline: none;
+    width: 200px; /* Define um tamanho fixo */
+    max-width: 100%;
+}
+
+/* Ajustando a lista de itens */
+#itens {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    font-weight: bold;
+    flex-wrap: wrap; /* Permite que os itens se ajustem */
+    justify-content: center;
+}
+
+#itens li {
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+#itens li:hover {
+    color: yellow;
+}
+
+/* Ajuste da imagem para que se adapte melhor */
+.imgtematica {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: rgb(41, 25, 25);
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+    .container-menu,
+    .flex-container-texto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    #itens {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-medieval {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .flex-container{
+        gap:60px;
+    }
+}

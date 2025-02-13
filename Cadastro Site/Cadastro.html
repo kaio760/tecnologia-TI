@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Jogos</title>
+
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+
+<body>
+    <main>
+        <form action="Formulario.php" method="POST" autocomplete="on">
+            <fieldset>
+
+                <Legend>
+                    <h3>Dados Do Usuario</h3>
+                </Legend>
+
+                <div>
+                    <label for="inome">Nome Completo:</label>
+                    <input class="dadosInput" type="text" name="name" id="inome" required maxlength="50"
+                        placeholder="Nome completo" autocomplete="name">
+                </div>
+
+                <div>
+                    <label for="iidade">Idade:</label>
+                    <input class="dadosInput" type="number" name="idade" id="iidade" required maxlength="100"
+                        placeholder="Idade" autocomplete="Idade">
+                </div>
+
+                <div>
+                    <label for="iEmail">Email:</label>
+                    <input class="dadosInput" type="email" name="email" id="iEmail" required maxlength="100"
+                        placeholder="Email" autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="iNumero">Numero</label>
+                    <input class="dadosInput" type="tel" name="Numero" id="iNumero" required maxlength="12"
+                        placeholder="Numero" autocomplete="Numero">
+                </div>
+
+                <div>
+                    <label for="isexo">Sexo</label>
+                    <select name="sexo" id="isexo">
+                        <option value="sexo">Masculino</option>
+                        <option value="sexo">Feminino</option>
+                        <option value="sexo">Não binario</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="datas" for="idia">Data de nascimento:</label>
+                    <input type="date" name="dia" id="idia" value="2024-6-10"><br>
+                </div>
+
+                <div>
+                    <label for="iestado">Estados</label>
+                    <select name="estado" id="iestado">
+                        <option value="" selected required>Escolha</option>
+
+                        <optgroup label="Região Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="Rj">Rio de Janeio</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="ES">Espirito Santo</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sul">
+                            <option value="PR">Paraná</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                        </optgroup>
+
+                        <optgroup label="Região Centro-Oeste">
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="GO">Goiás</option>
+                            <option value="DF">Distrito Federal</option>
+                        </optgroup>
+
+                        <optgroup label="Região Nordeste">
+                            <option value="BA">Bahia</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="CE">Ceará</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="PI">Piauí</option>
+                            <option value="MA">Maranhão</option>
+                        </optgroup>
+
+                        <optgroup label="Região Norte">
+                            <option value="AM">Amazonas</option>
+                            <option value="PA">Pará</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="AC">Acre</option>
+                            <option value="RR">Roraima</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="AP">Amapá</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <a href="CulturaPop Text.html" rel="prev" target="_self"><input type="button"
+                            value="Cadastrar Usuario"></a>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
