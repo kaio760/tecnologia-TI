@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 0</title>
+</head>
+
+<body>
+    <script>
+        //Calcule a area do terreno
+        //Digite o valor do metro quadrado
+
+        // mostre o resultado;
+        // Abaixo de 300.000,00 Mostre Terreno barato
+        // Acima de 300.000,00 Mostre: Terreno de alto custo
+
+        
+        // Solicita ao usuário o valor do metro quadrado
+        let valorMetroQuadrado = parseFloat(prompt("Digite o valor do metro quadrado:"));
+    
+        // Define as dimensões do terreno
+        let largura = 20;
+        let comprimento = 30;
+    
+        // Função para calcular a área do terreno
+        function calcularAreaTerreno(largura, comprimento) {
+            return largura * comprimento;
+        }
+    
+        // Calcula a área
+        let areaRetangulo = calcularAreaTerreno(largura, comprimento);
+        let valorTotal = areaRetangulo * valorMetroQuadrado;
+    
+        // Define a classificação do terreno
+        let resultado = valorTotal < 300000 ? "Terreno barato" : "Terreno de alto custo";
+    
+        // Exibe os resultados
+        alert("Área do terreno: " + areaRetangulo + " m²\nValor total: R$ " + valorTotal.toFixed(2) + "\nClassificação: " + resultado);
+</script>
+
+</body>
+
+</html>
