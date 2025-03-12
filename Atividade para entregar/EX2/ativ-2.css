@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para melhor controle de layout */
+}
+
+/* Estilização do body */
+body {
+    line-height: 1.6;
+    background-image: url("https://media.tenor.com/L_EJ9fCn9EUAAAAC/gear-5-luffy.gif");
+    background-repeat: no-repeat; /* Corrigido: apenas um valor é necessário aqui */
+    background-size: cover; /* Faz o fundo cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    font-family: Arial, sans-serif; /* Fonte padrão para melhor legibilidade */
+}
+
+/* Estilização do container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Centraliza verticalmente o conteúdo */
+    text-align: center;
+    color: #fff; /* Cor do texto branca para contraste com fundo escuro */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Sombra para melhor legibilidade */
+}
+
+/* Estilização do relógio */
+#clock {
+    font-size: 10rem; /* Tamanho grande para o relógio */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilização da mensagem */
+#mensagem {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilização da imagem */
+#imagem {
+    max-width: 1000px; /* Limita o tamanho da imagem */
+    height: auto;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Estilização do fundo (se for um elemento decorativo) */
+#fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Camada semitransparente para contraste */
+    z-index: -1; /* Coloca atrás do conteúdo */
+}
