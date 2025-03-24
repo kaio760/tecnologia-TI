@@ -3,9 +3,9 @@ function updateClock() {
     let hours = now.getHours().toString().padStart(2, '0');
     let minutes = now.getMinutes()
     let seconds = now.getSeconds()
-    let imagem  = window.document.getElementById('imagem');
+    let imagem = window.document.getElementById('imagem');
     let fundo = window.document.getElementById("fundo");
-    
+
     const timeString = `${hours}:${minutes}:${seconds}`;
     document.getElementById('clock').textContent = timeString;
 
