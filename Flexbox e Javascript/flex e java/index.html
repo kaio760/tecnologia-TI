@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site One Piece</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+
+<body onresize="mudouTamanho()">
+    <header>
+        <nav class="nav-container">
+            <div class="logo" id="logo" onclick="clickmenu()">
+                <img src="../img/logo one piece.png" alt="Logo One Piece">
+            </div>
+            <div id="itens">
+                <ul class="nav-links">
+                    <li><a href="#">Armas</a></li>
+                    <li><a href="#">Frutas</a></li>
+                </ul>
+                <div class="search">
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar...">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="sobre">
+            <h2>Zoro </h2>
+            <p>um espadachim caçador de piratas</p>
+
+            <div class="carrossel">
+                <button class="anterior">&#10094;</button>
+                <div class="imagem-slide">
+                    <img src="../img/zoro.jpg" alt="zoro1">
+                    <img src="../img/zoro2.jpg" alt="zoro2">
+                    <img src="../img/zoro3.jpg" alt="zoro3">
+                    <img src="../img/zoro4.jpg" alt="zoro4">
+                </div>
+                <button class="proximo">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Meu Portfólio</p>
+    </footer>
+
+</body>
+
+</html>
